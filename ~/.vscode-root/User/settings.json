@@ -1,6 +1,0 @@
-{
-    "editor.minimap.enabled": false,
-    "javascript.preferences.quoteStyle":"single",
-    "typescript.preferences.quoteStyle": "single",
-    "javascript.implicitProjectConfig.experimentalDecorators": true
-}

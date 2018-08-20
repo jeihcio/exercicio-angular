@@ -10,6 +10,6 @@ export class PhotoService {
 
     listFromUser(userName: string) {
         return this.http
-        .get<Photo[]>(API + '/' + userName + '/photos');    
+        .get<Photo[]>(API + '/' + userName + '/photos');       
     }
 }

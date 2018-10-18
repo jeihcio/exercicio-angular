@@ -10,8 +10,8 @@ export class UserService {
     private userSubject = new BehaviorSubject<User>(null);
 
     constructor(private tokenService: TokenService) {
-        this.tokenService.hasToken &&
-            this.decodeAndNotify();
+        this.tokenService.hasToken() &&
+            this.decodeAndNotify()            
     }
 
     setToken (token: String) {

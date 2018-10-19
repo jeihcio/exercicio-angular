@@ -2,7 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { FormGroup, FormBuilder, Validators } from "@angular/forms";
 
 @Component({
-    templateUrl: './signup.component.html'
+    templateUrl: 'signup.component.html'
 })
 export class SignUpComponent implements OnInit {
     signupForm: FormGroup;

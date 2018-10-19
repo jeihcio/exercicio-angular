@@ -16,7 +16,7 @@ export class UserNotTakenValidatorService {
                 .pipe(switchMap(userName => 
                     this.signUpService.checkUserNameTaken(userName) 
                 ))
-                .pipe(map(isTaken => isTaken ? { userName: true } : null))
+                .pipe(map(isTaken => isTaken ? { userNameTaken: true } : null))
                 .pipe(first());
         }
     }

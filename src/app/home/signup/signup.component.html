@@ -7,7 +7,7 @@
     
         <div class="row justify-content-md-center">
             <div class="col-6">
-                <form [formGroup]="signupForm" class="form mt-4">
+                <form [formGroup]="signupForm" class="form mt-4" (submit)="signup()">
                     <div class="form-group">
                         <input formControlName="email" placeholder="email" class="form-control" autofocus >
                         <ap-vmessage
@@ -69,7 +69,7 @@
                         </ap-vmessage>
                         <ap-vmessage
                             *ngIf="signupForm.get('password').errors?.minlength"
-                            text="Minimum length is 2">                    
+                            text="Minimum length is 8">                    
                         </ap-vmessage>
                         <ap-vmessage
                             *ngIf="signupForm.get('password').errors?.maxlength"
